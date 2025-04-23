@@ -20,7 +20,7 @@ public class Startup {
         this.nome = nome;
         this.slogan = slogan;
         this.ano_fundacao = ano_fundacao;
-        this.pontuacao = 0;
+        this.pontuacao = 70;
     }
 
     //metodo para adicionar pontuações nas batalhas
