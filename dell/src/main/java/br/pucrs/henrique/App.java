@@ -137,6 +137,7 @@ public class App {
             
             evento = in.nextLine();
 
+            //verifica a entrada de dados na escolha dos eventos
         
             if (evento.equals("0") || evento.equals("1") || evento.equals("2") || 
                 evento.equals("3") || evento.equals("4") || evento.equals("5")) {
@@ -185,6 +186,9 @@ public class App {
     
     private static Startup sharkFight(Startup star1, Startup star2, Scanner in) throws InterruptedException //exception para a shark fight
     {
+
+        //utilizei import Random para realizar a sharkfight
+
         Random rand = new Random();
         Startup vencedor = rand.nextBoolean() ? star1 : star2;
        
@@ -206,7 +210,7 @@ public class App {
         startups.sort((star1, star2) -> Integer.compare(star2.getPontuacao(), star1.getPontuacao()));
     
         System.out.printf("%-20s %-10s %-7s %-6s %-8s %-12s %-12s\n", 
-            "Startup", "Pts", "Pitch", "Bug", "Tração", "Investidores", "Penalidades");
+            "Startup", "Pts", "Pitch", "Bug", "Tração", "Investidores", "Fake news");
         System.out.println("------------------------------------------------------------------------");
     
         for (Startup star : startups) {
